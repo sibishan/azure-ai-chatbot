@@ -1,5 +1,5 @@
----
-name: Flask App on Azure App Service
+<!-- ---
+name: Workshop - Build an AI Chatbot
 description: Deploy a Flask app on App Service using Azure Developer CLI.
 languages:
 - python
@@ -9,13 +9,22 @@ products:
 - azure
 page_type: sample
 urlFragment: simple-flask-server-appservice
----
+--- -->
 
-# Simple Flask App on Azure App Service
+# Build an AI Chatbot workshops
+
+This workshop will take us through how to use Azure OpenAI in Python. Then we'll progress to deploying a web app (more instructions on how to deploy a web app are below). 
+
+Start by using the file python_rag.ipynb for the workshop instructions. 
+
+This repo has been cloned from a Simple Flask App repo so that all of the devops stuff is already set up, if you want to deploy it. (more instructions on how to deploy a web app are below). 
+
+
+## Simple Flask App on Azure App Service
 
 This repository includes a very simple Python Flask web site, made for demonstration purposes only.
 
-## Opening the project
+### Opening the project
 
 This project has [Dev Container support](https://code.visualstudio.com/docs/devcontainers/containers), so it will be be setup automatically if you open it in Github Codespaces or in local VS Code with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
@@ -29,7 +38,7 @@ If you're not using one of those options for opening the project, then you'll ne
     python3 -m pip install -r requirements.txt
     ```
 
-## Local development
+### Local development
 
 1. Run the server:
 
@@ -42,7 +51,7 @@ If you're not using one of those options for opening the project, then you'll ne
 
 ---
 
-## Deployment
+### Deployment
 
 This repo is set up for deployment on Azure App Service using the configuration files in the `infra` folder.
 
@@ -72,7 +81,7 @@ Steps for deployment:
     azd deploy
     ```
 
-### Costs
+#### Costs
 
 By default, this project is set up to deploy to the *free* plan of Azure App Service.
 The free plan is intended for trials, experimentation, and learning the service. There is no SLA for free plan and it is metered on a per app basis. Use of free plan for production workloads is not supported.
