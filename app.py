@@ -6,7 +6,7 @@ from azure.core.credentials import AzureKeyCredential
 
 # Put the keys and variables here (never put your real keys in the code)
 AOAI_ENDPOINT = "https://polite-ground-030dc3103.4.azurestaticapps.net/api/v1"
-AOAI_KEY = "702a03df-3742-4136-bb82-c7b18b256ef5"
+AOAI_KEY = "702a03df-3742-4136-bb82-c7b18b256ef5" #Throw Away API Key
 MODEL_NAME = "gpt-35-turbo-16k"
 AZURE_SEARCH_KEY = AOAI_KEY
 AZURE_SEARCH_ENDPOINT = AOAI_ENDPOINT
